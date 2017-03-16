@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using FeatureFlags.Web.Providers;
+@using FeatureFlags.Business;
+@using FeatureFlags.Web.UI.Models;
+
+@if (FlagCheckProvider.Instance.IsPreview(Constants.FeatureFlags.TaskScreen) == true)
+{
+    <h2>My Task List @Html.Partial("~/Views/Partials/_PreviewFlag.cshtml")</h2>
+}
+else
+{
+    <h2>My Task List</h2>
+}
+
+@*@Html.RenderPartial("~/Views/Partials/_Taskv1.cshtml", (List<Taskv2Model>)Model);*@
+
+    @if (FlagCheckProvider.Instance.IsEnabled(Constants.FeatureFlags.TaskProvider) == true)
+    {
+        Html.RenderPartial("~/Views/Partials/_Taskv2.cshtml", (List<Taskv2Model>)Model);
+    }
+    else if (FlagCheckProvider.Instance.IsPreview(Constants.FeatureFlags.TaskProvider) == true)
+    {
+        Html.RenderPartial("~/Views/Partials/_Taskv2.cshtml", (List<Taskv2Model>)Model);
+    }
+    else
+    {
+        Html.RenderPartial("~/Views/Partials/_Taskv1.cshtml", (List<Taskv2Model>)Model);
+    }

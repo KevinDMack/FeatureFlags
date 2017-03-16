@@ -1,0 +1,14 @@
+﻿@using FeatureFlags.Web.Providers;
+@using FeatureFlags.Business;
+
+@if (FlagCheckProvider.Instance.IsEnabled(Constants.FeatureFlags.TaskScreen) == true)
+{
+    if (FlagCheckProvider.Instance.IsPreview(Constants.FeatureFlags.TaskScreen) == true)
+    {
+        <li>@Html.ActionLink("Task - Preview", "Index", "Task")</li>
+    }
+    else
+    {
+        <li>@Html.ActionLink("Task", "Index", "Task")</li>
+    }
+}

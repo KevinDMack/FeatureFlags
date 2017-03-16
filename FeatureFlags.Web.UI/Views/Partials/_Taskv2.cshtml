@@ -1,0 +1,23 @@
+﻿ @model IEnumerable<FeatureFlags.Web.UI.Models.Taskv2Model>
+
+    <table width="600" cellpadding="10" border="1">
+        <tr>
+            <th>Title</th>
+            <th>Due Date</th>
+            <th>Assigned To</th>
+        </tr>
+        @foreach (var task in Model)
+        {
+            <tr>
+                <td>
+                    @task.Title
+                </td>
+                <td>
+                    @task.DueDate
+                </td>
+                <td>
+                    @task.AssignedTo
+                </td>
+            </tr>
+        }
+    </table>

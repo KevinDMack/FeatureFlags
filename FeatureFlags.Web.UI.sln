@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.25914.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureFlags.Web.UI", "FeatureFlags.Web.UI\FeatureFlags.Web.UI.csproj", "{0C3CF0BB-D6D7-438B-882C-E6B6B681F7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureFlags.Web.UI.Tests", "FeatureFlags.Web.UI.Tests\FeatureFlags.Web.UI.Tests.csproj", "{868495ED-8FB0-4516-B6E2-F8B6B4E930B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureFlags.Business", "FeatureFlags.Business\FeatureFlags.Business.csproj", "{D558C9ED-B626-4CA0-9D16-404EAE9E4E83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureFlags.Data", "FeatureFlags.Data\FeatureFlags.Data.csproj", "{2DB1491B-9543-465B-ADA1-689C65E89DC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureFlags.Web", "FeatureFlags.Web\FeatureFlags.Web.csproj", "{A9A8825B-978F-4C96-A3F5-39C17FA7AE60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C3CF0BB-D6D7-438B-882C-E6B6B681F7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3CF0BB-D6D7-438B-882C-E6B6B681F7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3CF0BB-D6D7-438B-882C-E6B6B681F7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3CF0BB-D6D7-438B-882C-E6B6B681F7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{868495ED-8FB0-4516-B6E2-F8B6B4E930B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{868495ED-8FB0-4516-B6E2-F8B6B4E930B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{868495ED-8FB0-4516-B6E2-F8B6B4E930B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{868495ED-8FB0-4516-B6E2-F8B6B4E930B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D558C9ED-B626-4CA0-9D16-404EAE9E4E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D558C9ED-B626-4CA0-9D16-404EAE9E4E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D558C9ED-B626-4CA0-9D16-404EAE9E4E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D558C9ED-B626-4CA0-9D16-404EAE9E4E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB1491B-9543-465B-ADA1-689C65E89DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB1491B-9543-465B-ADA1-689C65E89DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB1491B-9543-465B-ADA1-689C65E89DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB1491B-9543-465B-ADA1-689C65E89DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A8825B-978F-4C96-A3F5-39C17FA7AE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A8825B-978F-4C96-A3F5-39C17FA7AE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A8825B-978F-4C96-A3F5-39C17FA7AE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A8825B-978F-4C96-A3F5-39C17FA7AE60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mackbytes.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FeatureFlags.Business\\FeatureFlags.Business.csproj
+		SccProjectName1 = FeatureFlags.Business
+		SccLocalPath1 = FeatureFlags.Business
+		SccProjectUniqueName2 = FeatureFlags.Data\\FeatureFlags.Data.csproj
+		SccProjectName2 = FeatureFlags.Data
+		SccLocalPath2 = FeatureFlags.Data
+		SccProjectUniqueName3 = FeatureFlags.Web.UI.Tests\\FeatureFlags.Web.UI.Tests.csproj
+		SccProjectName3 = FeatureFlags.Web.UI.Tests
+		SccLocalPath3 = FeatureFlags.Web.UI.Tests
+		SccProjectUniqueName4 = FeatureFlags.Web.UI\\FeatureFlags.Web.UI.csproj
+		SccProjectName4 = FeatureFlags.Web.UI
+		SccLocalPath4 = FeatureFlags.Web.UI
+		SccProjectUniqueName5 = FeatureFlags.Web\\FeatureFlags.Web.csproj
+		SccProjectName5 = FeatureFlags.Web
+		SccLocalPath5 = FeatureFlags.Web
+	EndGlobalSection
+EndGlobal
