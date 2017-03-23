@@ -53,6 +53,7 @@
     <Compile Include="Providers\FeatureFlagDataConfigurationProvider.cs" />
     <Compile Include="Providers\FeatureFlagProvider.cs" />
     <Compile Include="Interfaces\IFeatureFlagProvider.cs" />
+    <Compile Include="Providers\FeedbackProvider.cs" />
     <Compile Include="ViewModels\FlagConfigurationViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

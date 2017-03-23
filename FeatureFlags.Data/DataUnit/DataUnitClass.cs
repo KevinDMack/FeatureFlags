@@ -89,5 +89,18 @@ namespace FeatureFlags.Data
 				_FeatureStateRepository = value as EFGenericRepository<FeatureState>;
 			}
 		}
+			
+		private EFGenericRepository<FeatureFeedback> _FeatureFeedbackRepository;
+		public IGenericRepository<FeatureFeedback> FeatureFeedbackRepository 
+		{ 
+			get 
+			{ 
+				return (_FeatureFeedbackRepository ?? (_FeatureFeedbackRepository = new EFGenericRepository<FeatureFeedback>(_context))); 
+			} 
+			set
+			{
+				_FeatureFeedbackRepository = value as EFGenericRepository<FeatureFeedback>;
+			}
+		}
 	}
 }

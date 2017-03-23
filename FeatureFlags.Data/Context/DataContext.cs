@@ -20,6 +20,7 @@ namespace FeatureFlags.Data
         public DbSet<FeatureRoleUser> FeatureRoleUser { get; set; }
         public DbSet<FeatureStateRole> FeatureStateRole { get; set;}
         public DbSet<FeatureState> FeatureState { get; set; }
+        public DbSet<FeatureFeedback> FeatureFeedback { get; set; }
 
         #endregion
 
@@ -40,6 +41,7 @@ namespace FeatureFlags.Data
             modelBuilder.Entity<FeatureRoleUser>();
             modelBuilder.Entity<FeatureStateRole>();
             modelBuilder.Entity<FeatureState>();
+            modelBuilder.Entity<FeatureFeedback>();
         }
 
         public override int SaveChanges()

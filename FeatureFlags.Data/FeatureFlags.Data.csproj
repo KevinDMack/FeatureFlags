@@ -77,8 +77,13 @@
     <Compile Include="Migrations\201703101320237_Initial.Designer.cs">
       <DependentUpon>201703101320237_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703232121315_AddFeedbackModel.cs" />
+    <Compile Include="Migrations\201703232121315_AddFeedbackModel.Designer.cs">
+      <DependentUpon>201703232121315_AddFeedbackModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\FeatureFeedback.cs" />
     <Compile Include="Models\FeatureFlag.cs" />
     <Compile Include="Models\FeatureRole.cs" />
     <Compile Include="Models\FeatureRoleUser.cs" />
@@ -95,6 +100,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703101320237_Initial.resx">
       <DependentUpon>201703101320237_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703232121315_AddFeedbackModel.resx">
+      <DependentUpon>201703232121315_AddFeedbackModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

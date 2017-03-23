@@ -25,6 +25,8 @@ namespace FeatureFlags.Data
 		IGenericRepository<FeatureStateRole> FeatureStateRoleRepository { get;set; }
 	
 		IGenericRepository<FeatureState> FeatureStateRepository { get;set; }
+	
+		IGenericRepository<FeatureFeedback> FeatureFeedbackRepository { get;set; }
 	}
 }
 
