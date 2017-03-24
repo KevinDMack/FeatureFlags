@@ -25,7 +25,7 @@ namespace FeatureFlags.Data
         #endregion
 
         public DataContext()
-            : base("DefaultConnection")
+            : base("FeatureConnection")
         {
         }
 
