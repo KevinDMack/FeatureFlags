@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.25914.0
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureFlags.Web.UI", "FeatureFlags.Web.UI\FeatureFlags.Web.UI.csproj", "{0C3CF0BB-D6D7-438B-882C-E6B6B681F7D3}"
 EndProject
@@ -42,26 +42,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://mackbytes.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = FeatureFlags.Business\\FeatureFlags.Business.csproj
-		SccProjectName1 = FeatureFlags.Business
-		SccLocalPath1 = FeatureFlags.Business
-		SccProjectUniqueName2 = FeatureFlags.Data\\FeatureFlags.Data.csproj
-		SccProjectName2 = FeatureFlags.Data
-		SccLocalPath2 = FeatureFlags.Data
-		SccProjectUniqueName3 = FeatureFlags.Web.UI.Tests\\FeatureFlags.Web.UI.Tests.csproj
-		SccProjectName3 = FeatureFlags.Web.UI.Tests
-		SccLocalPath3 = FeatureFlags.Web.UI.Tests
-		SccProjectUniqueName4 = FeatureFlags.Web.UI\\FeatureFlags.Web.UI.csproj
-		SccProjectName4 = FeatureFlags.Web.UI
-		SccLocalPath4 = FeatureFlags.Web.UI
-		SccProjectUniqueName5 = FeatureFlags.Web\\FeatureFlags.Web.csproj
-		SccProjectName5 = FeatureFlags.Web
-		SccLocalPath5 = FeatureFlags.Web
 	EndGlobalSection
 EndGlobal
