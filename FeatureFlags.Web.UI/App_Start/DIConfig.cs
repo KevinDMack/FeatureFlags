@@ -1,4 +1,5 @@
-﻿using FeatureFlags.Web.UI.DI;
+﻿using FeatureFlags.Web.DI;
+using FeatureFlags.Web.UI.DI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,11 @@ namespace FeatureFlags.Web.UI
 
             var container = TinyIoCContainer.Current;
 
-            DependencyResolver.SetResolver(new TinyIocDependencyResolver(container));
+            var resolver = new TinyIocDependencyResolver(container);
+
+            DependencyResolver.SetResolver(resolver);
+
+            DependencyService.Instance.Set(resolver);
         }
     }
 }

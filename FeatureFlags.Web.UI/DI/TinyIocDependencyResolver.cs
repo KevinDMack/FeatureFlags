@@ -4,10 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Http.Dependencies;
 using TinyIoC;
+using FeatureFlags.Web;
 
 namespace FeatureFlags.Web.UI.DI
 {
-    public class TinyIocDependencyResolver : System.Web.Http.Dependencies.IDependencyResolver, System.Web.Mvc.IDependencyResolver
+    public class TinyIocDependencyResolver : System.Web.Http.Dependencies.IDependencyResolver, System.Web.Mvc.IDependencyResolver, IDependencyResolver
     {
         protected TinyIoCContainer container;
 
@@ -54,6 +55,11 @@ namespace FeatureFlags.Web.UI.DI
         {
             var child = container.GetChildContainer();
             return new TinyIocDependencyResolver(child);
+        }
+
+        public TDependency Resolve<TDependency>() where TDependency : class 
+        {
+            return TinyIoCContainer.Current.Resolve<TDependency>();
         }
     }
 }

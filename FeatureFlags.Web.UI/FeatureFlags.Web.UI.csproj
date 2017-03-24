@@ -184,6 +184,7 @@
     <Compile Include="Models\TaskModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\TaskProvider.cs" />
+    <Compile Include="TinyIoC.cs" />
     <Compile Include="TinyIoCAspNetExtensions.cs" />
   </ItemGroup>
   <ItemGroup>

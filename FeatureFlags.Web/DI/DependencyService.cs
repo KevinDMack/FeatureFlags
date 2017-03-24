@@ -41,7 +41,7 @@ namespace FeatureFlags.Web.DI
             }
         }
 
-        public void Set<T>(T concreteInstance) where T : IDependencyResolver, new()
+        public void Set(IDependencyResolver concreteInstance)
         {
             _services.Add(typeof(IDependencyResolver), concreteInstance);
         }

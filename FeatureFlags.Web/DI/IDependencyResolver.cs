@@ -8,6 +8,6 @@ namespace FeatureFlags.Web
 {
     public interface IDependencyResolver
     {
-        TDependency Resolve<TDependency>();
+        TDependency Resolve<TDependency>() where TDependency : class;
     }
 }
