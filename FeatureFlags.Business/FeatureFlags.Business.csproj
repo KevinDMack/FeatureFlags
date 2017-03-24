@@ -48,12 +48,14 @@
     <Compile Include="Interfaces\ICacheProvider.cs" />
     <Compile Include="Interfaces\IFeatureFlagConfigurationProvider.cs" />
     <Compile Include="Interfaces\IFeatureFlagDataConfigurationProvider.cs" />
+    <Compile Include="Interfaces\IFeedbackProvider.cs" />
     <Compile Include="Interfaces\IFlagCheckProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\FeatureFlagDataConfigurationProvider.cs" />
     <Compile Include="Providers\FeatureFlagProvider.cs" />
     <Compile Include="Interfaces\IFeatureFlagProvider.cs" />
     <Compile Include="Providers\FeedbackProvider.cs" />
+    <Compile Include="ViewModels\FeedbackModel.cs" />
     <Compile Include="ViewModels\FlagConfigurationViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

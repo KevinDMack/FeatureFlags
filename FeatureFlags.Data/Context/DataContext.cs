@@ -54,8 +54,6 @@ namespace FeatureFlags.Data
 
             foreach (var dbEntry in auditable)
             {
-                //var userIdentityProvider = TinyIoCContainer.Current.Resolve<IUserIdentityProvider>();
-
                 switch (dbEntry.State)
                 {
                     case System.Data.Entity.EntityState.Added:
@@ -63,22 +61,10 @@ namespace FeatureFlags.Data
                         {
                             dbEntry.Entity.Key = Guid.NewGuid();
                         }
-                        //dbEntry.Entity.DateAdded = DateTime.Now;
-                        //dbEntry.Entity.AddedBy = userIdentityProvider.CurrentUserName;
                         if (dbEntry.Entity.EffectiveDate == DateTime.MinValue)
                         {
                             dbEntry.Entity.EffectiveDate = DateTime.Now;
                         }
-                        break;
-                    case System.Data.Entity.EntityState.Modified:
-                        //if (String.IsNullOrEmpty(dbEntry.Entity.AddedBy))
-                        //{
-                        //    dbEntry.Entity.DateAdded = DateTime.Now;
-                        //    dbEntry.Entity.AddedBy = userIdentityProvider.CurrentUserName;
-                        //}
-
-                        //dbEntry.Entity.DateModified = DateTime.Now;
-                        //dbEntry.Entity.ModifiedBy = userIdentityProvider.CurrentUserName;
                         break;
                 }
             }
