@@ -1,4 +1,5 @@
 ﻿using FeatureFlags.Business.Providers;
+using FeatureFlags.Web.DI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,6 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using TinyIoC;
 
 namespace FeatureFlags.Web.Attributes
 {
@@ -36,7 +36,8 @@ namespace FeatureFlags.Web.Attributes
 
             var userName = HttpContext.Current.User.Identity.Name;
 
-            var flagProvider = TinyIoCContainer.Current.Resolve<IFeatureFlagProvider>();
+            var resolver = DependencyService.Instance.GetDependencyInjection();
+            var flagProvider = resolver.Resolve<IFeatureFlagProvider>();
 
             var enabled = flagProvider.Enabled(FlagConfigKey, userName);
 

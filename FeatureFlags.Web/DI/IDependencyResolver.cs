@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FeatureFlags.Web
 {
-    public class Class1
+    public interface IDependencyResolver
     {
+        TDependency Resolve<TDependency>();
     }
 }

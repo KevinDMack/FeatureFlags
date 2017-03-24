@@ -1,12 +1,12 @@
 ﻿using FeatureFlags.Business.Interfaces;
 using FeatureFlags.Business.Providers;
+using FeatureFlags.Web.DI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using TinyIoC;
 
 namespace FeatureFlags.Web.Providers
 {
@@ -17,7 +17,8 @@ namespace FeatureFlags.Web.Providers
         {
             get
             {
-                _instance = TinyIoCContainer.Current.Resolve<IFlagCheckProvider>();
+                var resolver = DependencyService.Instance.GetDependencyInjection();
+                var _instance = resolver.Resolve<IFlagCheckProvider>();
                 return _instance;
             }
         }

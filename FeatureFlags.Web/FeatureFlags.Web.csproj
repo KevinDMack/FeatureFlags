@@ -74,7 +74,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\FeatureFlagAttribute.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="DI\DependencyService.cs" />
+    <Compile Include="DI\IDependencyResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\FlagCheckProvider.cs" />
     <Compile Include="Providers\ServerCacheProvider.cs" />
