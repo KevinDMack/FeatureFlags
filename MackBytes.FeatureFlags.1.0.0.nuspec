@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>MackBytes.FeatureFlags</id>
+        <version>1.0.0</version>
+        <title>Feature Flags</title>
+        <authors>KevinDMack</authors>
+        <projectUrl>https://github.com/KevinDMack/FeatureFlags</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A feature flag implementation for DotNet MVC Applications.  This library enables the use of a attribute based approach to controllers and action methods, and a singleton based wrapper for UI to enable database / cache driven feature flags within your application.</description>
+        <summary>A feature flag implementation for DotNet MVC Applications.</summary>
+        <copyright>March 2017</copyright>
+        <tags>DevOps, Feature Flags, Flags, Toggle</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.5.2">
+                <dependency id="EntityFramework" version="6.1.3" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Nuget Files\Controllers\FlagController.cs.pp" target="content\Controllers\FlagController.cs.pp" />
+        <file src="Nuget Files\Views\Flag\Index.cshtml.pp" target="content\Views\Flag\Index.cshtml.pp" />
+        <file src="Nuget Files\Views\Flag\Preview.cshtml.pp" target="content\Views\Flag\Preview.cshtml.pp" />
+        <file src="Nuget Files\Views\Partials\_PreviewFlag.cshtml.pp" target="content\Views\Partials\_PreviewFlag.cshtml.pp" />
+        <file src="FeatureFlags.Web\bin\Debug\FeatureFlags.Business.dll" target="lib\FeatureFlags.Business.dll" />
+        <file src="FeatureFlags.Web\bin\Debug\FeatureFlags.Data.dll" target="lib\FeatureFlags.Data.dll" />
+        <file src="FeatureFlags.Web\bin\Debug\FeatureFlags.Web.dll" target="lib\FeatureFlags.Web.dll" />
+    </files>
+</package>
