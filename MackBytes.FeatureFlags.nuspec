@@ -22,8 +22,8 @@
         <file src="NugetFiles\Index.cshtml.pp" target="content\Views\Flag\Index.cshtml.pp" />
         <file src="NugetFiles\Preview.cshtml.pp" target="content\Views\Flag\Preview.cshtml.pp" />
         <file src="NugetFiles\_PreviewFlag.cshtml.pp" target="content\Views\Partials\_PreviewFlag.cshtml.pp" />
-        <file src="FeatureFlags.Web\bin\Release\FeatureFlags.Business.dll" target="lib\FeatureFlags.Business.dll" />
-        <file src="FeatureFlags.Web\bin\Release\FeatureFlags.Data.dll" target="lib\FeatureFlags.Data.dll" />
-        <file src="FeatureFlags.Web\bin\Release\FeatureFlags.Web.dll" target="lib\FeatureFlags.Web.dll" />
+        <file src="NugetFiles\FeatureFlags.Business.dll" target="lib\FeatureFlags.Business.dll" />
+        <file src="NugetFiles\FeatureFlags.Data.dll" target="lib\FeatureFlags.Data.dll" />
+        <file src="NugetFiles\FeatureFlags.Web.dll" target="lib\FeatureFlags.Web.dll" />
     </files>
 </package>
